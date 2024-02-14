@@ -1,0 +1,48 @@
+
+body {
+    background-color: #f0d1f5; /* Light purple background */
+    font-family: Arial,sans-serif ; /* Set a common font for better readability */
+    line-height: 1.6; /* Increase line height for better readability */
+}
+.heart {
+    position: fixed;
+    top: -1vh;
+    font-size: 3rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+  }
+  
+/* Style the container */
+.container {
+    max-width: 600px; /* Set a maximum width for better readability */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Add padding */
+    background-color: #bda9ec; /* White background */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style the letter content */
+#letter-content {
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Add a border at the bottom */
+}
+
+/* Style the flowers container */
+#flowers {
+    margin-top: 20px;
+    display: none;
+    text-align: center; /* Center the flowers */
+}
+
+/* Style the flower images */
+#flowers img {
+    width: 200px; /* Adjust the width of the images */
+    margin: 0 10px; /* Add some margin between the images */
+}
+  
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+    }
+  }
